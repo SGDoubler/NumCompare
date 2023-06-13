@@ -7,14 +7,14 @@ public class Main
        double numOne = 0.0;
        double numTwo = 0.0;
        System.out.println("Pick a number!");
-       if (num.hasNextInt())
+       if (num.hasNextDouble())
        {
-           numOne = num.nextInt();
+           numOne = num.nextDouble();
            num.nextLine();
            System.out.println("Pick another number!");
-           if (num.hasNextInt())
+           if (num.hasNextDouble())
            {
-               numTwo = num.nextInt();
+               numTwo = num.nextDouble();
                if (numOne > numTwo)
                {
                    System.out.println(numOne + " is greater than " + numTwo);
